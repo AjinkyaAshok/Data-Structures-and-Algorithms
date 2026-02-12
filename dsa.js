@@ -16,3 +16,16 @@ for (let i = 0; i < k; i++) {
   }
   console.log(row)
 }
+
+let r = 5;
+let sw = 1;
+for (let i = 0; i < r; i++) {
+  let row = "";
+  
+  for (let j = 0; j < i + 1; j++) {
+    row = row + sw;
+    sw == 1 ? (sw = 0) : (sw = 1);
+  }
+
+  console.log(row);
+}
