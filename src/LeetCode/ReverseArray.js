@@ -11,8 +11,22 @@ function reverseArray(arr) {
 
     right--;
     left++;
+    
   }
   return arr;
 }
 
 console.log(reverseArray(arr));
+
+
+
+
+// Using reverse( method)
+ var arr = [1, 3, 5, 7, 8, 10];
+
+ function reverse(arr){
+    let temp = arr.reverse()
+    return temp
+ }
+
+ console.log(reverse(arr))
