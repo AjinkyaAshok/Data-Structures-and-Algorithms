@@ -1,19 +1,18 @@
 function maxSum(arr, k) {
-  let windowSum = 0;
+  let sum = 0;
 
   for (let i = 0; i < k; i++) {
-    windowSum = windowSum + arr[i];
+    sum = sum + arr[i];
   }
-  let max = windowSum;
-
+  let max = sum;
   for (let i = k; i < arr.length; i++) {
-    windowSum = windowSum + arr[i];
-    windowSum = windowSum - arr[i - k];
+    sum = sum + arr[i];
+    sum = sum - arr[i - k];
 
-    max = Math.max(max, windowSum);
+    max = Math.max(max, sum);
 
   }
-  return max
+  return max;
 }
 
-console.log(maxSum([2,1,5,1,3,2],6))
+console.log(maxSum([2, 3, 5, 1, 3, 2], 3));
