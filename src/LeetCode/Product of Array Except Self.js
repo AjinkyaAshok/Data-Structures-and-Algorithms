@@ -1,5 +1,5 @@
 function productArray(arr) {
-  let product = [];
+  
 
   const result = new Array(arr.length).fill(1);
 
