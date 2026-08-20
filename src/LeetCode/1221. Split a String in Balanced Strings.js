@@ -11,3 +11,6 @@ function balancedStringSplit(s) {
 }
 
 console.log(balancedStringSplit("RLRRLLRLRL"));
+
+
+//time-o(n) and space-o(1)
